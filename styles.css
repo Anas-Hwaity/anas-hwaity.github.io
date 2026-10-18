@@ -269,3 +269,15 @@ dialog.case::backdrop { background: rgb(8 9 11 / .6); backdrop-filter: blur(4px)
 .ph-spec b { font: 600 15px/1.2 var(--font-display); color: var(--ink); }
 .ph-spec span { font: 500 11.5px/1.4 var(--font-mono); color: var(--muted); }
 @media (max-width: 520px) { .mock-phone { grid-template-columns: 1fr; gap: 10px; justify-items: center; } .ph-spec { text-align: center; } .phone { width: 116px; height: 190px; } }
+
+.mock-endura { direction: ltr; justify-items: center; background: radial-gradient(110% 90% at 100% 100%, color-mix(in srgb, var(--ok) 9%, transparent), transparent 60%), var(--bg-2); font-family: var(--font-body); }
+.en-card { width: min(380px, 100%); background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 16px; display: grid; gap: 10px; box-shadow: var(--shadow); }
+.en-top { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; padding-bottom: 6px; border-bottom: 1px solid var(--line); }
+.en-top b { font: 600 15px/1 var(--font-display); }
+.en-top span { font: 500 11px/1.3 var(--font-mono); color: var(--muted); }
+.en-step { display: grid; grid-template-columns: 22px 1fr auto; gap: 10px; align-items: center; font-size: 13.5px; }
+.en-step i { width: 22px; height: 22px; border-radius: 6px; display: grid; place-items: center; font-style: normal; font-size: 12px; background: var(--bg-2); color: var(--muted); border: 1px solid var(--line); }
+.en-step.ok i { background: var(--ok-soft); color: var(--ok); border-color: transparent; }
+.en-step em { font: 500 11px/1 var(--font-mono); font-style: normal; color: var(--muted); }
+.en-meter { display: flex; justify-content: space-between; font: 500 11.5px/1 var(--font-mono); color: var(--muted); padding-top: 8px; border-top: 1px solid var(--line); }
+.en-meter span:first-child { color: var(--ink); }
